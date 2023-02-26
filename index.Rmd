@@ -19,20 +19,7 @@ One potential limitations of this data was that the data only counted the initia
 
 ### First Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The first chart that you will create and include will show the trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
+I chose to create a bar plot to compare the difference of checkouts between book, eBook, magazine, audio book, sound disc, videodisc in the Seattle public library. We know that the main purpose of the public library is to to provide resources and services in a variety of media to meet the needs of people for information. Therefore, I want to find out what kind of media people use the most to meet needs for education, information, and recreation. The bar plot shows that book, eBook and audio book are the top three types of items with the most checkouts. This bar chart shows that public libraries play an important role in supporting education and literacy. 
 
 ``````{r, echo = FALSE, warning = FALSE, message=FALSE, code = readLines("chart1_example.R")}
 bar_plot
@@ -40,35 +27,18 @@ bar_plot
 
 ### Second Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The second chart that you will create and include will show another trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
+I chose to create multiple line plots to show the change of checkouts of each items from 2017 to 2023. Because the data in 2023 was incomplete, I did not include information of 2023 in analysis. The chart shows checkouts for books and videodisc have significantly declined between 2019 and 2020 due to the outbreak of COVID. Checkouts for eBook and audio book keep increasing from 2017 to 2021, even during the pandemic. Checkouts for magazine and sound disc have little change in six years.
 
 ``````{r, echo = FALSE, code = readLines("chart2_example.R")}
+line_plot
 ```
 
 ### Your Choice
 
-The last chart is up to you. It could be a line plot, scatter plot, histogram, bar plot, stacked bar plot, and more. Here are some requirements to help guide your design:
+I chose to create a bar plot to analyze checkouts for The House of Broken Angels, one of my favorite books. From the chart, I noticed that checkouts of The House of Broken Angels were steady from 2018 to 2021 but sharply increased in 2022.
 
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear legend title
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart2_example.R")}
+``````{r, echo = FALSE, code = readLines("A3_chart3.R")}
+favorite_book_bar_plot
 ```
 
 
