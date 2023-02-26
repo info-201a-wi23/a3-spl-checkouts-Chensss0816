@@ -5,7 +5,7 @@ output: html_document
 
 ### Introduction
 
-In this report, I want to analyze the trend of items checked out in the Seattle Public Library from 2017 to 2023. Since library use has been in steady decline across the nation, I want to study the change of each type of checked out items from 2017 to 2023. I mainly focus on book, eBook, magazine, audio book, music, movie.  
+In this report, I want to analyze the trend of items checked out in the Seattle Public Library from 2017 to 2023. Since library use has been in steady decline across the nation, I want to study the change of each type of checked out items from 2017 to 2023. I mainly focus on book, eBook, magazine, audio book, sound disc, videodisc. 
 
 ### Summary Information
 
@@ -34,7 +34,8 @@ When we say "clear" or "human readable" titles and labels, that means that you s
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-``````{r, echo = FALSE, warning = FALSE, code = readLines("chart1_example.R")}
+``````{r, echo = FALSE, warning = FALSE, message=FALSE, code = readLines("chart1_example.R")}
+bar_plot
 ```
 
 ### Second Trends Over Time Chart

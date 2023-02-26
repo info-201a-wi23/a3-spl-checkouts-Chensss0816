@@ -13,6 +13,5 @@ item_types <- spl_data %>% summarise(item_types = n_distinct(MaterialType))
 
 most_popular_book <- spl_data %>% group_by(CheckoutYear) %>% filter(MaterialType == "EBOOK") %>% filter(Checkouts == max(Checkouts))
 
-View(most_popular_book)
  
 
