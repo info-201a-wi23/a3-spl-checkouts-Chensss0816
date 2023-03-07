@@ -19,11 +19,11 @@ One potential limitation of this data was that the data only counted the initial
 
 ### First Trends Over Time Chart
 
-I chose to create a bar plot to compare the difference of checkouts between book, eBook, magazine, audio book, sound disc, videodisc in the Seattle public library. We know that the main purpose of the public library is to to provide resources and services in a variety of media to meet the needs of people for information. Therefore, I want to find out what kind of media people use the most to meet needs for education, information, and recreation. The bar plot shows that book, eBook and audio book are the top three types of items with the most checkouts. This bar chart shows that public libraries play an important role in supporting education and literacy. 
+I chose to create a stacked bar plot to compare the difference of checkouts between book, eBook, magazine, audio book, sound disc, videodisc in the Seattle public library. We know that the main purpose of the public library is to to provide resources and services in a variety of media to meet the needs of people for information. Therefore, I want to find out what kind of media people use the most to meet needs for education, information, and recreation. The bar plot shows that book, eBook and audio book are the top three types of items with the most checkouts. This bar chart shows that public libraries play an important role in supporting education and literacy. 
 
 ```{r, echo = FALSE, warning = FALSE, message=FALSE}
 source("A3_chart1.R")
-bar_plot
+stacked_bar_plot
 ```
 
 ### Second Trends Over Time Chart
@@ -37,7 +37,7 @@ line_plot
 
 ### Your Choice
 
-I chose to create a bar plot to analyze checkouts for The House of Broken Angels, one of my favorite books. From the chart, I noticed that checkouts of The House of Broken Angels were steady from 2018 to 2021 but sharply increased in 2022.
+I chose to create a bar plot to analyze checkouts for *The House of Broken Angels*, one of my favorite books. From the chart, I noticed that checkouts of The House of Broken Angels were steady from 2018 to 2021 but sharply increased in 2022. What's more, Seattle Reads has announced its book selection for 2022: *The House of Broken Angels*, which was the bestselling 2018 novel by renowned Mexican American writer Luis Alberto Urrea. This poignant novel was a story about a Mexican immigrant family living in California. The another reason for its popularity in 2022 might be the writer's visit to Seattle.  Luis Alberto Urrea visited Seattle in October to participate in Seattle Reads events. The publicity of this activity may somehow stimulate people's interest in reading this book. 
 
 ```{r, echo = FALSE, warning = FALSE, message=FALSE}
 source("A3_chart3.R")
